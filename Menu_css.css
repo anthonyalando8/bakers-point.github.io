@@ -84,4 +84,7 @@ left: 50%;}
     width: 90%;
     height: 100%;
   }
+  .split-half button{
+    width: 100%;
+  }
 }
