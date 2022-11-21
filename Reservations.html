@@ -1,0 +1,249 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <title>Reservations</title>
+        <link rel="shortcut icon" href="../lib/Images/favicon.ico">
+        <link rel="stylesheet" href="../lib/page_layout_default.css">
+        <link rel="stylesheet" href="../lib/Reservations_css.css">
+        <script src="../lib/Reservations_js.js"></script>
+        <script src="https://www.googleoptimize.com/optimize.js?id=OPT-WQWZ5ZM"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/3695de9773.js" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <div id="bakery-name">BAKERS POINT</div>
+        <header>
+            <div id="header-buttons">
+                <button class="button"onclick="document.location='index.html'">HOME</button> 
+                <button class="button"onclick="document.location='orders.html'">ORDERS</button> 
+                <button class="button"onclick="document.location='shops.html'">SHOPS</button>  
+                <button class="button" onclick="document.location='Reservations.html'">RESERVATIONS</button> 
+                <button class="button" onclick="document.location='Menu.html'">PRODUCTS</button>
+                <button class="button" onclick="document.location='Gallery.html'">GALLERY</button>
+                <button class="button" onclick="document.location='about.html'">ABOUT</button> 
+                <button class="button" onclick="document.location='account.html'">ACCOUNT</button>
+                <button class="button"  onclick="document.location='login.html'">LOGIN</button>
+            </div>
+        </header>
+        <br />
+        <section class="split-container">
+            <section class="split-half">
+                <div id="bakery-picture"><img src="https://ik.imagekit.io/anthonyalando/Images/BP.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029686241" alt="Bakers Point"width="90%"></div>
+                <br />
+                <div id="left-part1">Guide to our holiday offers.</div>
+            </section>
+            <section class="split-half">
+                <div id="right-part1" onmouseover="setInterval(upperLeftSection,1000)">Nation wide Shipping.</div>
+                <div id="right-part2">We now ship many of our iconic desserts across Kenya.<br />
+                     Order now to bring the Magnolia Bakery Experience to your door.
+                </div>
+                <section class="split-container">
+                    <section class="split-half">
+                        <div><img src="https://ik.imagekit.io/anthonyalando/Images/cupcakes2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029695487" width="90%"></div>
+                    </section>
+                    <section class="split-half">
+                        <div><img src="https://ik.imagekit.io/anthonyalando/Images/chocolate_biscuit.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029688218" width="90%"></div>
+                    </section>
+                </section>
+            </section>
+        </section>
+        
+        <section id="upper-lower-section">
+            <div id="page-content">Reservations</div>
+            <div id="bakerspoint-notice">
+                Walk-ins and reservations are welcomed. Reservations can be made by calling, <br />
+                254700536326 or online by clicking the Reserve button below. <br /> 
+                Lunch, Mon-Fri, 11am to 3pm <br />
+                Dinner, Sun-Wed, 5pm to 8:30pm <br >
+                Dinner, Thurs-Sat, 5pm to 9pm.
+            </div>
+                <div id="btnreserve"><button class="button" onclick="document.location='#form-reserve'">RESERVE</button></div> 
+        </section><br />
+            <br />
+            <section class="split-container">
+                <section id="middle-left">
+                    <div class="bakerspoint-reservation-picture">Bakers Point
+                        <br />
+                        <div id="bakerspoint-help-note">
+                            Bakers, Specialty cake, bread, and pastry orders can be placed by
+                            <br />
+                            emailing our bakery team at
+                            <br />
+                            bakerspoint@gmail.com. Please allow 24 hours for a response.
+                            <br />
+                            If you require immediate assistance, please call 254796211581.
+                            <br />
+                        </div>
+                    </div>
+                </section>
+                <section id="middle-right">
+                        <div id="middle-right-content">
+                            We love to knead; we knead to love<br />
+                        </div>
+                        It all began with a simple mission <br />
+                        between two great friends create the <br/>
+                        world <b>greatest chocolate chip</b> <br />
+                        cookie.<br />
+                        The rest is history and baked <b>fresh <br/> daily.</b> <br />
+                        <img src="https://ik.imagekit.io/anthonyalando/Images/cupcakes.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029693432" alt="Cupcakes" width="300" height="300">
+                </section>
+            </section>
+            <br />
+            <section class="split-container">
+                <section id="form-reserve">
+                    <form action="../lib/reservation-php.php" method="POST">
+                        <div id="form-header">Reservation Booking Form</div>
+                        <div id="bakerspoint-reservation-disclaimer">Please place online 
+                            reservations at least 3 days in advance by simply
+                            completing the form and request booking to us.
+                        </div>
+                        <br />
+                        <div id="bakerspoint-personal-reservation-info-header">Personal Information</div>
+                        <hr />
+                        <label for="SName">Surname*</label>
+                        <input type="text" name="SName" size="30" required>
+                        <label for="FName">First Name*</label>
+                        <input type="text" name="FName" size="30" required>
+                        <br />
+                        <label for="LName">Other Name</label>
+                        <input type="text" name="LName" size="30" placeholder="(Optional)">
+                        <label for="PNumber">Phone Number*</label>
+                        <input type="tell" name="PNumber" size="30" required>
+                        <br />
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" size="30" required>
+                        
+                        <label for="City">City*</label>
+                        <select name="City" id="City" class="select"required>
+                            <option value="" disabled selected hidden>Select City</option>
+                            <option value="Mombasa">Mombasa</option>
+                            <option value="Nairobi">Nairobi</option>
+                            <option value="Kakamega">Kakamega</option>
+                            <option value="Thika">Thika</option>
+                            <option value="Kiambu">Kiambu</option>
+                            <option value="Eldoret">Eldoret</option>
+                            <option value="Bungoma">Bungoma</option>
+                            <option value="Kitale">Kitale</option>
+                            <option value="Nakuru">Nakuru</option>
+                            <option value="Busia">Busia</option>
+                        </select>
+                        <br />
+                        <label for="Add1">Address 1*</label>
+                        <input type="text" name="Add1" id="Add1" size="30" required>
+                        
+                        <label for="">Address 2</label>
+                        <input type="text" name="Add2" id="Add2" size="30" placeholder="(Optional)">
+                        <br />
+                        <div id="bakerspoint-personal-reservation-info-header">Reservation Information</div>
+                        <hr />
+                        <label for="Check-in-date">Check-in-date*</label>
+                        <input type="date" name="Check-in-date" id="Check-in-date"  required>
+                        <label for="Check-in-time">Check-in-time*</label>
+                        <input type="time" name="Check-in-time" id="Check-in-time"  required>
+                        <br />
+                        <label for="Check-out-date">Check-out-date*</label>
+                        <input type="date" name="Check-out-date" id="Check-out-date" onchange="ReservationBookingDateCondition()" required>
+                        <br />
+                        <label for="Tabel">Table Preferences*</label>
+                        <select name="Tabel" id="Tabel" required>
+                            <option value="" disabled selected hidden>Select Table Type</option>
+                            <option value="Standard">Standard</option>
+                            <option value="Deluxe">Deluxe</option>
+                            <option value="Suite">Suite</option>
+                        </select>
+                        <br />
+                        <label for="Number-of-guests">Number-of-guests*</label>
+                        <input type="number" name="Number-of-guests" id="Number-of-guests" onchange="InvalidNumberOfGuests()" required>
+                        <br />
+                        <br />
+                        <input type="submit" name="submit"value="submit">
+                    </form>
+                </section>
+                <section class="logo-section">
+                    <h1>Bakers Point</h1>
+                    <img src="https://ik.imagekit.io/anthonyalando/Images/BP_Log.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029684992" alt="Bakers Point Logo" width="250" height="250"><br />
+                    Thank you for your intrest! <br />
+                    We look forward to serving you.
+                </section>
+        </section>
+
+        <section class="split-container">
+            <section class="split-half">
+                <div class="mapouter">
+                <div class="gmap_canvas">
+                <iframe width="100%" height="500px" id="gmap_canvas" 
+                src="https://maps.google.com/maps?q=Bakers%20Point%20Eldoret%20Zion%20Mall&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://123movies-to.org"></a><br>
+                <a href="https://www.embedgooglemap.net">google maps html embed</a>
+                </div>
+                </div>
+            </section>
+            <section class="split-half">
+                <div id="right-part1">Our Outlets <br /></div>
+                <div id="right-part2">
+                    From humble beginnings back in 2004,
+                    <br />Bakers Point has evolved to become one of the <br />
+                     fastest growing cake shop, 
+                     <br />pizzeria & café in Western & Rift Valley…<br /><br />
+                     <button id="btnOulets">Find Your Nearest Outlet</button>
+                </div>
+            </section>
+        </section>
+        
+        <footer class="footer">
+            <hr />
+            <section class="footer-containter">
+                <section class="footer-left">
+                    <h1><i class="fa-solid fa-phone-volume"></i></h1>
+                        +2547 96 211 581<br />
+                        +2547 00 536 326<br />
+                        +2547 02 511 706<br />
+                    
+                    <h1>Since 2004</h1>
+                    Bakers Point is a Coffee house based in Eldoret located in 
+                    <br />Zion Mall & Rupa’s Mall which deals with all types of
+                    <br /> cakes, pastries, confectioneries and fast food products.
+                </section>
+                <section class="footer-middle">
+                    <div id="footer-middle-content"><h1><i class="fa-solid fa-link"></i></h1>
+                        Company<br />FAQS<br />Menu<br />Careers<br />Catering
+                    </div>
+                    <div id="translate-page"></div>
+                            <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                  new google.translate.TranslateElement({pageLanguage: 'en'}, 'translate-page');
+                                }
+                                </script>
+                                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </section>
+                <section class="footer-right">
+                    <div id="social-media">
+                        <h1>Follow Us</h1>
+                            <a target="_blank"href="https://wa.me/254700536326?text=Hello,%20I%20have%20concern%20about%20Bakers%20Point." style="text-decoration: none;">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a target="_blank"href="https://www.facebook.com/anthony.omukuyia.9/" style="text-decoration: none;">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a target="_blank"href="#" style="text-decoration: none;">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a target="_blank"href="#" style="text-decoration: none;">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                            <a target="_blank"href="https://www.youtube.com/@anthonyalando7390" style="text-decoration: none;">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                    </div>
+                    <h1>Helpfull Information</h1>
+                    Reservation Policy<br />
+                    Payments and Return Policy<br />
+                    Privacy Policy<br />
+                    Terms & Conditions
+                </section>
+            </section>
+        </footer>
+    </body>
+</html>

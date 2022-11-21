@@ -1,0 +1,87 @@
+.menu-description
+{
+  background-image: url('https://ik.imagekit.io/anthonyalando/Images/blue-curve-background.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029688321');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 97.5%;
+  margin-left: 2.5%;
+  min-height: 600px;
+  text-align: center;
+  font-size: 24px;
+  font-weight:500;
+  color: white;
+}
+.description{font-size: 20px;color: brown;text-align: center; width: 90%;}
+.products-available{width: 95%;padding-right: 2.5%;padding-left: 2.5%; background-color: bisque;
+border-radius: 25px;
+}
+.products-available:hover{
+  -webkit-transform: translateY(-4px);transform: translateY(-4px);
+    cursor: pointer;
+}
+.search{
+  width: 20%;
+  left: 80%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://ik.imagekit.io/anthonyalando/Images/magnifying-glass-solid.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669036648558');
+  background-size: 20px 20px;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+.search:focus
+{width: 50%;
+left: 50%;}
+#bakerspoint-help-note{
+  color: rgb(12, 7, 7);
+}
+.split-half button
+{
+  border: 2px solid rgb(130, 204, 233);
+  width: 40%;
+  font-size: 20px;
+}
+.split-half #button
+{
+  line-height: 3.5;
+}
+.split-half #header
+{
+  color: rgb(29, 29, 207);
+}
+#mission, #vision, #objectives
+{
+  display: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: rgb(255, 38, 0);
+  font-family: 'Brush Script MT', cursive;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media (max-width: 800px) {
+  .menu-description{
+    width: 90%;
+    height: 100%;
+  }
+}
