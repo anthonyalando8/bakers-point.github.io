@@ -87,4 +87,6 @@ left: 50%;}
   .split-half button{
     width: 100%;
   }
+  .search{width:100%;}
+  .search:focus{width: 100%;}
 }
