@@ -88,5 +88,5 @@ left: 50%;}
     width: 100%;
   }
   .search{width:100%;}
-  .search:focus{width: 100%;}
+  .search:focus{width: 95%;}
 }
