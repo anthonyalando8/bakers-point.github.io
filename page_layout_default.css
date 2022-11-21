@@ -44,7 +44,7 @@ background-repeat: no-repeat;background-size: 100%;background-size: cover;}
 @media (max-width: 800px) 
 {
   .split-half, #page-content,.footer-right,.footer-left,.footer-middle
-  {width: 90%;float: left;padding-top: 10px;}
+  {width: 100%;float: left;padding-top: 10px;}
     .footer-container,.split-container{display: inline-block;}
     header{overflow: scroll;}
     .footer-right,.footer-left,.footer-middle{text-align: left;}
