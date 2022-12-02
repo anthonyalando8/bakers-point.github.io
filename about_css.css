@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  .split-half button
+{
+  border: 2px solid rgb(130, 204, 233);
+  width: 40%;
+  font-size: 20px;
+}
+.split-half #button
+{
+  line-height: 3.5;
+  border-right: 2px solid rgb(117, 115, 115);
+}
+.split-half #header
+{
+  color: rgb(29, 29, 207);
+}
+#mission, #vision, #objectives
+{
+  display: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: rgb(255, 38, 0);
+  font-family: 'Brush Script MT', cursive;
+  font-size: 20px;
+  font-weight:400;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media (max-width: 650px) {
+  
+  .split-half button{
+    width: 100%;
+  }
+  .column {
+    width: 100%;
+    display: block;
+  }
+  .split-half #button{
+    border: none;
+  }
+  
+}
+
