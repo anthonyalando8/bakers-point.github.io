@@ -6,28 +6,148 @@
         <title>Bakers Point</title>
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="page_layout_default.css">
+        <link rel="stylesheet" href="about_css.css">
         <script src="https://www.googleoptimize.com/optimize.js?id=OPT-WQWZ5ZM"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/3695de9773.js" crossorigin="anonymous"></script>
+        <script>
+            function btnMission(){
+                document.getElementById("mission").style.display="block";
+                document.getElementById("vision").style.display="none";
+                document.getElementById("objectives").style.display="none";
+            }
+            function btnVision(){
+                document.getElementById("mission").style.display="none";
+                document.getElementById("vision").style.display="block";
+                document.getElementById("objectives").style.display="none";
+            }
+            function btnObjectives(){
+                document.getElementById("mission").style.display="none";
+                document.getElementById("vision").style.display="none";
+                document.getElementById("objectives").style.display="block";
+            }
+        </script>
     </head>
     <body>
-        <div id="bakery-name">BAKERS POINT</div>
-      <header>
-        <div id="header-buttons">
-            <button class="button"onclick="document.location='index.html'">HOME</button> 
-            <button class="button"onclick="document.location='orders.html'">ORDERS</button> 
-            <button class="button"onclick="document.location='shops.html'">SHOPS</button> 
-            <button class="button" onclick="document.location='Reservations.html'">RESERVATIONS</button> 
-            <button class="button" onclick="document.location='Menu.html'">PRODUCTS</button>
-            <button class="button" onclick="document.location='Gallery.html'">GALLERY</button>
-            <button class="button"onclick="document.location='about.html'">ABOUT</button> 
-            <button class="button"onclick="document.location='account.html'">ACCOUNT</button>
+        <span class="header-top-split-container" id="header-top">
+            <section class="menu-icon-name" id="menu-icon">
+                <button><i class="fa-solid fa-bars"></i></button>
+                <div class="dropdown-content">
+                    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <a href="Menu.html"><i class="fa-solid fa-cake-candles"></i> Products</a>
+                    <a href="orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+                    <a href="Reservations.html"><i class="fa-solid fa-table"></i> Reservation</a>
+                    <a href="shops.html"><i class="fa-solid fa-shop"></i> Shops</a>
+                    <a class="active"href="about.html"><i class="fa-solid fa-address-card"></i> About Us</a>
+                    <a href="Gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+                    <a href="account.html"><i class="fa-solid fa-circle-info"></i> Account</a>
+                    <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+                    <a href=""><i class="fa fa-fw fa-search"></i> Search</a>
+                </div>
+            </section>
+            <section class="menu-icon-name" id="name">
+                BAKERS POINT
+            </section>
+        </span>
+        <div class="navbar">
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="Menu.html"><i class="fa-solid fa-cake-candles"></i> Products</a>
+            <a href="orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+            <a href="Reservations.html"><i class="fa-solid fa-table"></i> Reservation</a>
+            <a href="shops.html"><i class="fa-solid fa-shop"></i> Shops</a>
+            <a class="active"href="about.html"><i class="fa-solid fa-address-card"></i> About Us</a>
+            <a href="Gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+            <a href="account.html"><i class="fa-solid fa-circle-info"></i> Account</a>
+            <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+            <a href=""><i class="fa fa-fw fa-search"></i> Search</a>
         </div>
-    </header>
-            <h1 id="page-content">About Us</h1>
-              <footer class="footer">
+        <div class="about-section">
+        <p>
+        Everything on the menu is made and baked in our fully certified home kitchen.
+        This is made possible under the California Cottage Food Act. 
+        Our kitchen is custom designed to bake for you!
+        Over the years we have aquired the tools necessary to bake for larger events.
+        </p>
+        </div>
+        <section class="split-container">
+            <section class="split-half">
+                <div id="button">
+                    <button class="button" id="btnMission" onmouseenter="btnMission()"><i class="fa-regular fa-circle-dot"></i> Mission</button><br />
+                    <button class="button" id="btnVsion" onmouseenter="btnVision()"><i class="fa-solid fa-eye-low-vision"></i> Vision</button><br />
+                    <button class="button" id="btnObjectives" onmouseenter="btnObjectives()"><i class="fa-solid fa-bullseye"></i>  Objectives</button><br />
+                </div>
+            </section>
+            <section class="split-half">
+                <div id="mission" class="animate">
+                    <h1 id="header">Mission</h1>
+                    Our goal is to provide all of our customers with an unparalleled product and experience.
+                    <br />
+                    Our talented team of pastry chefs uses the purist of ingredients 
+                    <br />and cutting edge techniques to create a product that is truly superior in quality.<br />
+                    We constantly provide outstanding customer service <br />
+                    and believe that customer satisfaction is our ultimate goal.<br />
+                </div>
+                <div id="vision" class="animate">
+                    <h1 id="header">Vision</h1>
+                    Our vision is to continually provide our customers products 
+                    <br />that are superior in quality from which the market offers. 
+                    <br />To educate consumers about the ingredients in our products and the <br />origins of those ingredients.</div>
+                <div id="objectives" class="animate">
+                    <h1 id="header">Objectives</h1>
+                    The objective is to convert raw dough into bread, 
+                    <br />set structure of product, crust and crumb formation,
+                    <br /> kill-step and shelf-life extension.</div>
+                
+            </section>
+        </section>
+        <h2 style="text-align:center">Our Team</h2>
+        <div class="row">
+        <div class="column">
+            <div class="card">
+            <img src="https://ik.imagekit.io/anthonyalando/Images/avatar.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669121599974" alt="Jane" style="width:100%">
+            <div class="container">
+                <h2>Anthony Alando</h2>
+                <p class="title">CEO & Founder</p>
+                <p>Plan, implement and manage overall operations.</p>
+                <p>anthonyalando8@gmail.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+            <img src="https://ik.imagekit.io/anthonyalando/Images/avatar2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669121603923" alt="Mike" style="width:100%">
+            <div class="container">
+                <h2>Mike Ross</h2>
+                <p class="title">Art Director</p>
+                <p>Conduct hotel budgeting and financial planning</p>
+                <p>mike@gmail.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="card">
+            <img src="https://ik.imagekit.io/anthonyalando/Images/beautifulwoman_119.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669121606148" alt="John" style="width:100%">
+            <div class="container">
+                <h2>Frank M</h2>
+                <p class="title">Designer</p>
+                <p>Technical interpretation of layout.</p>
+                <p>frank@gmail.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+
+            
+              
                 <hr />
-                <section class="footer-containter">
+                <section class="footer-containter"id="footer">
                     <section class="footer-left">
                         <h1><i class="fa-solid fa-phone-volume"></i></h1>
                         +2547 96 211 581<br />
@@ -79,6 +199,6 @@
                         Terms & Conditions
                     </section>
                 </section>
-            </footer>
+            
     </body>
 </html>
