@@ -14,30 +14,44 @@
         <script src="https://kit.fontawesome.com/3695de9773.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div id="bakery-name">BAKERS POINT</div>
-        
-        <header>
-            <div id="header-buttons">
-                <i class="fa-solid fa-bars"></i>
-                <button class="button"onclick="document.location='index.html'">HOME</button> 
-                <button class="button"onclick="document.location='orders.html'">ORDERS</button> 
-                <button class="button"onclick="document.location='shops.html'">SHOPS</button> 
-                <button class="button" onclick="document.location='Reservations.html'">RESERVATIONS</button> 
-                <button class="button" onclick="document.location='Menu.html'">PRODUCTS</button>
-                <button class="button" onclick="document.location='Gallery.html'">GALLERY</button>
-                <button class="button"onclick="document.location='about.html'">ABOUT</button> 
-                <button class="button"onclick="document.location='account.html'">ACCOUNT</button>
-                
-            </div>
-        </header>
-        <form>
-        <input type="text" name="search" class="search" placeholder="Search..">
-        </form>
+        <span class="header-top-split-container" id="header-top">
+            <section class="menu-icon-name" id="menu-icon">
+                <button onclick="viewMenu()"><i class="fa-solid fa-bars"></i></button>
+                <div class="dropdown-content">
+                    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <a class="active"href="Menu.html"><i class="fa-solid fa-cake-candles"></i> Products</a>
+                    <a href="orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+                    <a href="Reservations.html"><i class="fa-solid fa-table"></i> Reservation</a>
+                    <a href="shops.html"><i class="fa-solid fa-shop"></i> Shops</a>
+                    <a href="about.html"><i class="fa-solid fa-address-card"></i> About Us</a>
+                    <a href="Gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+                    <a href="account.html"><i class="fa-solid fa-circle-info"></i> Account</a>
+                    <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+                    <a href=""><i class="fa fa-fw fa-search"></i> Search</a>
+                </div>
+            </section>
+            <section class="menu-icon-name" id="name">
+                BAKERS POINT
+            </section>
+        </span>
+        <div class="navbar">
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a class="active" href="Menu.html"><i class="fa-solid fa-cake-candles"></i> Products</a>
+            <a href="orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+            <a href="Reservations.html"><i class="fa-solid fa-table"></i> Reservation</a>
+            <a href="shops.html"><i class="fa-solid fa-shop"></i> Shops</a>
+            <a href="about.html"><i class="fa-solid fa-address-card"></i> About Us</a>
+            <a href="Gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+            <a href="account.html"><i class="fa-solid fa-circle-info"></i> Account</a>
+            <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+            <a href=""><i class="fa fa-fw fa-search"></i> Search</a>
+        </div>
             <div id="page-content">Our Products</div>
-            <div id="bakerspoint-notice">For more than 18 years, Bakers Point has been making favourite cakes for all occassions, <br />
+            <p id="bakerspoint-notice">
+                For more than 18 years, Bakers Point has been making favourite cakes for all occassions, <br />
                 mouthwatering pizzas and <br /> 
                 tasty fast food products that will crave you for more and more.
-            </div>
+            </p>
         <br /><br />
         
         
@@ -50,114 +64,68 @@
                 Personalised cakes for all occasions.
                 <br />
                 Order online or visit Our store for thre best cakes in town, Pizzas, Pastries and Fast Foods
-            </div>
-            <section class="split-container">
-                <section class="split-half">
-                    <div id="button">
-                        <button class="button" id="btnMission" onmouseenter="btnMission()"><i class="fa-regular fa-circle-dot"></i> Mission</button><br />
-                        <button class="button" id="btnVsion" onmouseenter="btnVision()"><i class="fa-solid fa-eye-low-vision"></i> Vision</button><br />
-                        <button class="button" id="btnObjectives" onmouseenter="btnObjectives()"><i class="fa-solid fa-bullseye"></i>  Objectives</button><br />
-                    </div>
-                </section>
-                <section class="split-half">
-                    <div id="mission" class="animate">
-                        <h1 id="header">Mission</h1>
-                        Our goal is to provide all of our customers with an unparalleled product and experience.
-                        <br />
-                        Our talented team of pastry chefs uses the purist of ingredients 
-                        <br />and cutting edge techniques to create a product that is truly superior in quality.<br />
-                        We constantly provide outstanding customer service <br />
-                        and believe that customer satisfaction is our ultimate goal.<br />
-                    </div>
-                    <div id="vision" class="animate">
-                        <h1 id="header">Vision</h1>
-                        Our vision is to continually provide our customers products 
-                        <br />that are superior in quality from which the market offers. 
-                        <br />To educate consumers about the ingredients in our products and the <br />origins of those ingredients.</div>
-                    <div id="objectives" class="animate">
-                        <h1 id="header">Objectives</h1>
-                        The objective is to convert raw dough into bread, 
-                        <br />set structure of product, crust and crumb formation,
-                        <br /> kill-step and shelf-life extension.</div>
-                    
-                </section>
-            </section>
+            </div>  
         </section>
-        <br /><br />
+        <br />
+        <form>
+            <input type="text" name="search" class="search"id="search" onkeyup="myFunction()"placeholder="Search..">
+        </form>
+        <br />
 
-        <section class="split-container">
-            <section class="split-half">
-                <section class="split-container">
-                    <section class="split-half">
-                        <div class="products-available">
-                        <img src="https://ik.imagekit.io/anthonyalando/Images/sponge-cake-with-strawberries-top.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029728128" alt="Sponge cakes with strawberries"width="90%" height="180">
-                        <div class="description">Sponge Cakes</div>
-                        </div>
-                    </section>
-                    <section class="split-half">
-                        <div class="products-available">
-                        <img src="https://ik.imagekit.io/anthonyalando/Images/wedding-cake-with-color-flores.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029728339" alt="Wedding Cakes" width="90%" height="180">
-                        <div class="description">Wedding Cakes</div>
-                        </div>
-                    </section>
-                </section>
-            </section>
-            <section class="split-half">
-                <section class="split-container">
-                    <section class="split-half">
-                        <div class="products-available">
-                        <img src="https://ik.imagekit.io/anthonyalando/Images/chocolate-cake-with-dried-fruit.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029692457" alt="Chocolate cakes with dried fruits"width="90%" height="180">
-                        <div class="description">Chocolate cakes</div>
-                        </div>
-                    </section>
-                    <section class="split-half">
-                        <div class="products-available">
-                        <img src="https://ik.imagekit.io/anthonyalando/Images/delicious-donuts.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029704544" alt="Delicious Donuts" width="90%" height="180">
-                        <div class="description">Donuts</div>
-                        </div>
-                    </section>
-                </section>
-            </section>
-        </section>
+        <ul class="products" id="products">
+        <li class="products-available">
+            <a href="#">
+            <img src="https://ik.imagekit.io/anthonyalando/Images/sponge-cake-with-strawberries-top.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029728128" alt="Sponge cakes with strawberries"width="180" height="180">
+            <p>Sponge Cakes</p>
+            </a>
+        </li>
+        <li class="products-available">
+            <a href="#">
+            <img src="https://ik.imagekit.io/anthonyalando/Images/wedding-cake-with-color-flores.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029728339" alt="Wedding Cakes" width="180" height="180">
+            <p>Wedding Cakes</p>
+            </a>
+        </li>
+        <li class="products-available">
+            <a href="#">
+            <img src="https://ik.imagekit.io/anthonyalando/Images/chocolate-cake-with-dried-fruit.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029692457" alt="Chocolate cakes with dried fruits"width="180" height="180">
+            <p>Chocolate cakes</p>
+            </a>
+        </li>
+        <li class="products-available">
+            <a href="#">
+            <img src="https://ik.imagekit.io/anthonyalando/Images/delicious-donuts.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029704544" alt="Delicious Donuts" width="180" height="180">
+            <p>Donuts</p>
+            </a>
+        </li>
+        <li class="products-available">
+            <a href="#">
+            <img src="https://ik.imagekit.io/anthonyalando/Images/dessert-fruitcake.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029708504" alt="Desert fruit cakes" width="180" height="180">
+            <p>Desert fruit cakes</p>
+            </a>
+        </li>
+        <li class="products-available">
+            <a href="#">
+            <img src="https://ik.imagekit.io/anthonyalando/Images/cupcakes1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029698703" alt="Cupcakes" width="180" height="180">
+            <p>Cupcakes</p>
+            </a>
+        </li>
+        <li class="products-available">
+            <a href="#">
+            <img src="https://ik.imagekit.io/anthonyalando/Images/happy-birthday-cake.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029702684" alt="Birthday cakes" width="180" height="180">
+            <p>Birthday cakes</p>
+            </a>
+        </li>
+        <li class="products-available">
+            <a href="#">
+            <img src="https://ik.imagekit.io/anthonyalando/Images/cake-with-caramel.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029688030" alt="Cakes with caramel" width="180" height="180">
+            <p>Cake with caramel</p>
+            </a>
+        </li>
+        </ul>         
 
-        <section class="split-container">
-            <section class="split-half">
-                <section class="split-container">
-                    <section class="split-half">
-                        <div class="products-available">
-                        <img src="https://ik.imagekit.io/anthonyalando/Images/dessert-fruitcake.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029708504" alt="Desert fruit cakes" width="90%" height="180">
-                        <div class="description">Desert fruit cakes</div>
-                        </div>
-                    </section>
-                    <section class="split-half">
-                        <div class="products-available">
-                        <img src="https://ik.imagekit.io/anthonyalando/Images/cupcakes1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029698703" alt="Cupcakes" width="90%" height="180">
-                        <div class="description">Cupcakes</div>
-                        </div>
-                    </section>
-                </section>
-            </section>
-            <section class="split-half">
-                <section class="split-container">
-                    <section class="split-half">
-                        <div class="products-available">
-                        <img src="https://ik.imagekit.io/anthonyalando/Images/happy-birthday-cake.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029702684" alt="Birthday cakes" width="90%" height="180">
-                        <div class="description">Birthday cakes</div>
-                        </div>
-                    </section>
-                    <section class="split-half">
-                        <div class="products-available">
-                        <img src="https://ik.imagekit.io/anthonyalando/Images/cake-with-caramel.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029688030" alt="Cakes with caramel" width="90%" height="180">
-                        <div class="description">Cake with caramel</div>
-                        </div>
-                    </section>
-                </section>
-            </section>
-        </section>
-
-        <footer class="footer">
+        
             <hr />
-            <section class="footer-containter">
+            <section class="footer-containter"id="footer">
                 <section class="footer-left">
                     <h1><i class="fa-solid fa-phone-volume"></i></h1>
                         +2547 96 211 581<br />
@@ -207,6 +175,26 @@
                     Terms & Conditions
                 </section>
             </section>
-        </footer>
+            <script>
+                function myFunction() {
+                    // Declare variables
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById('search');
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("products");
+                    li = ul.getElementsByTagName('li');
+                  
+                    // Loop through all list items, and hide those who don't match the search query
+                    for (i = 0; i < li.length; i++) {
+                      a = li[i].getElementsByTagName("a")[0];
+                      txtValue = a.textContent || a.innerText;
+                      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                      } else {
+                        li[i].style.display = "none";
+                      }
+                    }
+                  }
+            </script>
     </body>
 </html>
