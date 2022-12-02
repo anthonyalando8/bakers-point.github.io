@@ -1,7 +1,8 @@
 .bakerspoint-reservation-picture
 {
-  background-image: url("https://ik.imagekit.io/anthonyalando/Images/reserve.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029721456");background-attachment: fixed;background-size: cover;background-size: cover;
-  min-height: 650px;background-repeat: no-repeat;text-align: left;
+  background-image: url("https://ik.imagekit.io/anthonyalando/Images/reserve.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029721456");
+  background-attachment: fixed;background-size: auto 100%;
+  min-height: 400px;background-repeat: no-repeat;text-align: left;
   padding-left: 50px;padding-top: 100px;font-size: 24px;font-weight:500;color: white;
 }
 #split{float:right;}
@@ -10,8 +11,13 @@
 .mapouter{text-align:right;height:500px;width:100%;}
 #btnOulets{background-color: bisque; color: black; border-radius: 20px; font-size: 24px; padding: 5px; border: none;}
 
-#upper-lower-section{background-image: url("https://ik.imagekit.io/anthonyalando/Images/blankWhiteBoard.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029687637");padding-bottom: 30px;background-repeat: no-repeat;background-size: auto 100%;}
-#form-header{text-align: center;color: burlywood;padding:3px; height:auto;font-size: 28px;font-weight: 500;text-decoration: overline burlywood;}
+#upper-lower-section{
+  background-image: url("https://ik.imagekit.io/anthonyalando/Images/blankWhiteBoard.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029687637");
+  padding-bottom: 30px;background-repeat: no-repeat;background-size: auto 100%;
+}
+#form-header{text-align: center;color: burlywood;padding:3px; height:auto;font-size: 28px;
+  font-weight: 500;text-decoration: overline burlywood;
+}
 #bakerspoint-reservation-disclaimer{text-align: center;color: burlywood;font-weight: 400;}
 #bakerspoint-personal-reservation-info-header{font-weight:bolder;color: burlywood;}
 input[type=submit]:hover, #left-part1:hover
@@ -23,7 +29,9 @@ input[type=submit]:hover, #left-part1:hover
 form{text-align: left;}
 label{display: inline-block;width: 150px;height: 0.6cm;text-align:left;}
 .select{width: 246px;}
-input[type=submit]{width: 150px;margin: auto;color: white;background-color: blue;padding: 10px;font-size: 20px;}
+input[type=submit]{width: 150px;margin: auto;
+  color: white;background-color: blue;padding: 10px;font-size: 20px;
+}
 input:focus, select:focus{border: 1px solid blue;}
 
 #left-part1
@@ -36,17 +44,25 @@ input:focus, select:focus{border: 1px solid blue;}
 #right-part2{color: blueviolet;font-size: 20px;font-weight: 300;padding-top: 20px;}
 #form-reserve, #middle-left
 {
-  background-color: white;color: black;float: left;width: 70%;
+  color: black;float: left;width: 70%;
   min-height: auto;line-height: 2.4;padding-left: 15px;
 }
-.logo-section, #middle-right
-{color: brown;font-size: 24px;padding-left: 0.5%;float: right;width: auto;min-height: auto;text-align: center;}
-#middle-right-content{background-color: antiquewhite;font-weight: 700;line-height: 2.0;font-size: 28px;color: blue;}
+.logo-section, #middle-right{color: brown;
+  font-size: 24px;padding-left: 0.5%;
+  float: right;width: auto;min-height: auto;text-align: center;
+}
+#middle-right-content{
+  background-color: antiquewhite;
+  font-weight: 700;line-height: 2.0;font-size: 28px;color: blue;
+}
 #reservations-section::after, #middle-section::after,.split-container::after
 {content: "";display: table;clear: both;}
 .footer-container{width: 100%;display: flex;}
 @media (max-width: 800px) 
 {
     #form-reserve, .logo-section,.bakerspoint-reservation-picture, #middle-left, #middle-right
-    {width: 100%;float: left;padding-top: 10px;}
+    {
+      width: 100%;float: left;padding-top: 10px;
+    }
+    #upper-lower-section{background-size: 100% 100%;}
 }
