@@ -13,20 +13,38 @@
         <script src="https://kit.fontawesome.com/3695de9773.js" crossorigin="anonymous"></script>
     </head>
     <body> 
-        <div id="bakery-name">BAKERS POINT</div>
-        <header>
-            <div id="header-buttons">
-                <button class="button"onclick="document.location='index.html'">HOME</button> 
-                <button class="button"onclick="document.location='orders.html'">ORDERS</button> 
-                <button class="button"onclick="document.location='shops.html'">SHOPS</button>  
-                <button class="button" onclick="document.location='Reservations.html'">RESERVATIONS</button> 
-                <button class="button" onclick="document.location='Menu.html'">PRODUCTS</button>
-                <button class="button" onclick="document.location='Gallery.html'">GALLERY</button>
-                <button class="button" onclick="document.location='about.html'">ABOUT</button> 
-                <button class="button" onclick="document.location='account.html'">ACCOUNT</button>
-                <button class="button"  onclick="document.location='login.html'">LOGIN</button>
-            </div>
-        </header>
+        <span class="header-top-split-container" id="header-top">
+            <section class="menu-icon-name" id="menu-icon">
+                <button><i class="fa-solid fa-bars"></i></button>
+                <div class="dropdown-content">
+                    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <a href="Menu.html"><i class="fa-solid fa-cake-candles"></i> Products</a>
+                    <a href="orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+                    <a class="active"href="Reservations.html"><i class="fa-solid fa-table"></i> Reservation</a>
+                    <a href="shops.html"><i class="fa-solid fa-shop"></i> Shops</a>
+                    <a href="about.html"><i class="fa-solid fa-address-card"></i> About Us</a>
+                    <a href="Gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+                    <a href="account.html"><i class="fa-solid fa-circle-info"></i> Account</a>
+                    <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+                    <a href=""><i class="fa fa-fw fa-search"></i> Search</a>
+                </div>
+            </section>
+            <section class="menu-icon-name" id="name">
+                BAKERS POINT
+            </section>
+        </span>
+        <div class="navbar">
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="Menu.html"><i class="fa-solid fa-cake-candles"></i> Products</a>
+            <a href="orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+            <a class="active" href="Reservations.html"><i class="fa-solid fa-table"></i> Reservation</a>
+            <a href="shops.html"><i class="fa-solid fa-shop"></i> Shops</a>
+            <a href="about.html"><i class="fa-solid fa-address-card"></i> About Us</a>
+            <a href="Gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+            <a href="account.html"><i class="fa-solid fa-circle-info"></i> Account</a>
+            <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+            <a href=""><i class="fa fa-fw fa-search"></i> Search</a>
+        </div>
         <br />
         <section class="split-container">
             <section class="split-half">
@@ -93,7 +111,7 @@
             <br />
             <section class="split-container">
                 <section id="form-reserve">
-                    <form action="reservation-php.php" method="POST">
+                    <form action="../lib/reservation-php.php" method="post">
                         <div id="form-header">Reservation Booking Form</div>
                         <div id="bakerspoint-reservation-disclaimer">Please place online 
                             reservations at least 3 days in advance by simply
@@ -192,9 +210,9 @@
             </section>
         </section>
         
-        <footer class="footer">
+        
             <hr />
-            <section class="footer-containter">
+            <section class="footer-containter"id="footer">
                 <section class="footer-left">
                     <h1><i class="fa-solid fa-phone-volume"></i></h1>
                         +2547 96 211 581<br />
@@ -244,6 +262,6 @@
                     Terms & Conditions
                 </section>
             </section>
-        </footer>
+        
     </body>
 </html>
