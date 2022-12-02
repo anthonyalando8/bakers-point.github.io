@@ -1,53 +1,160 @@
 html{scroll-behavior: smooth;}
-body{background-color: gainsboro;font-family: Awesome 5 Pro;}
-#header-buttons{word-spacing: 30px;display:flex;}
+body{background-color: rgb(252, 250, 250);}
 .button
-{border: 1px;padding: 15px 20px;
+{
+  border: 1px;padding: 15px 20px;
   text-align: center;cursor: pointer;font-size: 14px;font-weight: bold;letter-spacing: 1px;
   border-radius: 25px;background-color: whitesmoke;color: black;
+}
+#header-top
+{
+  display: none;
 }
 button:hover
 {
     color: brown;
     -webkit-transform: translateY(-4px);transform: translateY(-4px);
     cursor: pointer;letter-spacing: 2px;
-  }
-#bakery-name
-{text-align:right;font-size:24px;color: white; background-color: brown;background-origin: content-box; 
-  letter-spacing: 5px;}
-#bakerspoint-notice
-{text-align:center;line-height: 1.5;font-size: 24px;}
-header
-{text-align: center;font-size: 60px;background-color: whitesmoke;position:-webkit-sticky;position: sticky;
-  top: 0%;font-weight: 900;width: 100%;overflow: hidden;
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 17px;
+  letter-spacing: normal;
+}
+.dropdown-content a:hover:not(.active) {background-color: #f1f1f1}
+
+#name
+{
+  width: 90%;
+  float: left;
+  margin:auto;
+  text-align: right;
+}
+#menu-icon
+{
+  width: 10%;
+  float: left;
+  margin: auto;
+  text-align: left;
+}
+.menu-icon-name
+{
+  font-size:24px;color: white;
+  background-color: #555;
+  background-origin: content-box; 
+  letter-spacing: 5px; 
+  width: 100%;
+  padding-left: 5px;
+  display: inline-block;
+}
+.menu-icon-name button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+/* Navbar links on mouse-over */
+.navbar a:hover:not(.active)
+{
+  background-color: #000;
+}
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  border-right: 1px solid #bbb;
+}
+
+.navbar a:last-child {
+  border-right: none;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+#bakerspoint-notice{
+  text-align:center;line-height: 1.5;font-size: 24px;
 }
 #page-content
-{text-align: center;width: auto;margin: auto;color: black;padding:3px; 
-  height:35px;font-size: 36px;font-weight: 700;
+{
+  text-align: center;width: auto;color: black;padding:3px; 
+  font-size: 36px;font-weight: 700;
 }
-#bakerspoint-help-note{line-height: 1.8 ;font-weight: 300;}
-.footer{padding:10px;
-  color: sienna;width:99%;position: absolute; 
-  background-image: url('https://ik.imagekit.io/anthonyalando/Images/blue-curve-background-footer.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029688057');
-background-repeat: no-repeat;background-size: 100%;background-size: cover;}
-.split-container{width: 100%;display: flex; height: auto;}
-.split-container::after{content: "";display: table;clear: both;}
-.split-half{float: left;width: 50%;margin: auto;height: 100%;padding-top: 15px;padding-bottom: 20px;padding-left: 15px;}
-.footer-left, .footer-middle{float: left;width: 33%;}
+#bakerspoint-help-note{
+  line-height: 1.8 ;font-weight: 300;}
+#footer{
+  padding:10px;
+  color: sienna;
+}
+.split-container,.footer-container,.header-top-split-container
+{
+  width: 100%;
+  display: flex;
+  height: auto;
+}
+.split-container::after,.footer-container::after,.header-top-split-container::after{
+  content: "";display: table;clear: both;
+}
+.split-half{
+  float: left;
+  width: 50%;
+  margin: auto;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+.footer-left, .footer-middle{float: left;width: 30%;}
 .footer-middle{text-align: center;}
 #translate-page{padding-top: 10px;}
 #footer-middle-content{line-height: 1.0;}
 .footer-right
-{float: right;width: 33%;text-align: right;word-spacing: 10px; }
-.footer-container{width: 100%;display: flex;}
-.footer-container::after{content: "";display: table;clear: both;}
-@media (max-width: 800px) 
+{
+  float: right;
+  width: 30%;
+  text-align: right;
+  word-spacing: 10px; 
+}
+@media (max-width: 650px) 
 {
   .split-half, #page-content,.footer-right,.footer-left,.footer-middle
-  {width: 100%;float: left;padding-top: 10px;}
-    .footer-container,.split-container{display: inline-block;}
-    header{overflow: scroll;}
-    .footer-right,.footer-left,.footer-middle{text-align: left;}
+  {
+    width: 90%;float: left;padding-top: 10px;
+  }
+  .navbar a {
+    float: none;
+    display: none;
+  }
+  .footer-container,.split-container{display: inline-block;}
+  .footer-right,.footer-left,.footer-middle{text-align: left;}
+  #menu-icon:hover .dropdown-content {
+    display: block;
+  }
+  #header-top{
+    display: flex;
+  }
 }
 input, select
 {
@@ -55,4 +162,4 @@ input, select
   -webkit-transition: 0.5s;
   transition: 0.5s;outline: none;border-radius: 5px;padding: 3px;
 }
-img{border-radius: 15%;}
+img{border-radius: 10%;}
