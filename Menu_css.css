@@ -1,23 +1,24 @@
 .menu-description
 {
-  background-image: url('https://ik.imagekit.io/anthonyalando/Images/blue-curve-background.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029688321');
+  background-color: rgb(255, 102, 0);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 97.5%;
-  margin-left: 2.5%;
+  width: 100%;
   min-height: auto;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight:500;
   color: white;
+  padding-bottom: 15px;
 }
-.products-available{
-  background-color: bisque;border: 1px solid rgb(202, 200, 200);
-  border-radius: 15px;font-size: 20px;color: brown;
-}
-.products-available:hover{
-  -webkit-transform: translateY(-4px);transform: translateY(-4px);
-    cursor: pointer;
+#bakerspoint-help-note{
+  color: rgb(12, 7, 7);
+  width: 60%;
+  margin: auto;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 form{width: 80%;
   margin: auto;
@@ -36,21 +37,46 @@ form{width: 80%;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
 }
+.item-type{
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(255, 102, 0);
+  font-weight: 700;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+.products-available{
+  background-color: rgb(250, 249, 246);border: 1px solid rgb(235, 232, 232);
+  border-radius: 0px 0px 0px 0px;font-size: 18px;color: brown;
+}
+.products-available:hover{
+    cursor: pointer;
+}
 ul{
   list-style-type: none;
-  list-style-position: outside;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: auto;
 }
+
 ul.products li{
   display: inline-block;
   text-align: center;
-  padding: 10px;
+  padding-bottom: 5px;
+  margin: 5px;
 }
 ul a{
   text-decoration: none;
 }
-#bakerspoint-help-note{
-  color: rgb(12, 7, 7);
+ul li button{
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background-color: rgb(255, 102, 0);
 }
+
 @media screen and (max-width: 650px) {
   .menu-description{
     width: 90%;
