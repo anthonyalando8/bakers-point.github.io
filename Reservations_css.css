@@ -4,18 +4,31 @@
   min-height: 400px;
   padding-left: 5px;padding-top: 50px;font-size: 20px;
 }
+#middle-left .fa-truck{
+  font-size: 98px;
+  padding-top: 100px;
+  color: aliceblue;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+@keyframes example{
+  from{left: 0%;}
+  to{left: 80%;}
+}
 #bakerspoint-help-note{
-  width: 60%;
+  width: 80%;
   margin: auto;
   background-color: whitesmoke;
   padding: 20px;
   border-radius: 5px;
 }
+
 #split{float:right;}
 #btnreserve{width:120px;margin: auto;}
-.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}
-.mapouter{text-align:right;height:500px;width:100%;}
-#btnOulets{background-color: bisque; color: black; border-radius: 20px; font-size: 24px; padding: 5px; border: none;}
+
 
 #upper-lower-section{
   background-image: url("https://ik.imagekit.io/anthonyalando/Images/blankWhiteBoard.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669029687637");
@@ -42,11 +55,11 @@ input:focus, select:focus{border: 1px solid blue;}
 
 #left-part1
 {
-  color: brown;font-size: 36px;font-weight: 500;
+  color: brown;font-size: 24px;font-weight: 500;
   text-align: center;padding-left: 5px;padding-top: 30px;
-  background-color: aquamarine;width: 90%;min-height: 100px;border-radius: 50px;
+  background-color: aquamarine;width: 90%;min-height: 80px;border-radius: 5px;
 }
-#right-part1{font-size: 40px;color: burlywood;font-weight: 500;padding-top: 25px;}
+#right-part1{font-size: 36px;color: burlywood;font-weight: 500;padding-top: 25px;}
 #right-part2{color: blueviolet;font-size: 20px;font-weight: 300;padding-top: 20px;}
 #form-reserve, #middle-left
 {
@@ -64,11 +77,16 @@ input:focus, select:focus{border: 1px solid blue;}
 #reservations-section::after, #middle-section::after,.split-container::after
 {content: "";display: table;clear: both;}
 .footer-container{width: 100%;display: flex;}
-@media (max-width: 800px) 
+@media (max-width: 650px) 
 {
     #form-reserve, .logo-section,#middle-left, #middle-right
     {
-      width: 90%;float: left;padding-top: 5px;
+      width: 100%;float: left;padding-top: 5px;
     }
     #upper-lower-section{background-size: 100% 100%;}
+    #left-part1{min-height: auto;}
+    @keyframes example{
+      from{left: 0%;}
+      to{left: 70%;}
+    }
 }
