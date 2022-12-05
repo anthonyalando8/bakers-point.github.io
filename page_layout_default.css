@@ -155,7 +155,7 @@ button:hover
   #header-top{
     display: flex;
   }
-  #bakerspoint-help-note{line-height: normal;width: 100%; padding: 5px;}
+  #bakerspoint-help-note{line-height: normal;width: 100%; padding: 0px;}
 }
 input, select
 {
