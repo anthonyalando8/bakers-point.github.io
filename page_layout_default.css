@@ -104,7 +104,7 @@ button:hover
 }
 #bakerspoint-help-note{
   line-height: 1.8 ;font-weight: 300;}
-#footer{
+.footer-containter{
   padding:10px;
   color: sienna;
 }
