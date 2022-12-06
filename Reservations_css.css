@@ -59,8 +59,8 @@ input:focus, select:focus{border: 1px solid blue;}
   text-align: center;padding-left: 5px;padding-top: 30px;
   background-color: aquamarine;width: 90%;min-height: 80px;border-radius: 5px;
 }
-#right-part1{font-size: 36px;color: burlywood;font-weight: 500;padding-top: 25px;}
-#right-part2{color: blueviolet;font-size: 20px;font-weight: 300;padding-top: 20px;}
+#right-part1{font-size: 24px;color: burlywood;font-weight: 500;padding-top: 25px;}
+#right-part2{color: blueviolet;font-size: 16px;font-weight: 300;padding-top: 20px;}
 #form-reserve, #middle-left
 {
   color: black;float: left;width: 70%;
@@ -84,9 +84,11 @@ input:focus, select:focus{border: 1px solid blue;}
       width: 100%;float: left;padding-top: 5px;
     }
     #upper-lower-section{background-size: 100% 100%;}
-    #left-part1{min-height: auto;}
+    #left-part1{min-height: auto; padding: 0px;}
     @keyframes example{
       from{left: 0%;}
-      to{left: 70%;}
+      to{left: 60%;}
     }
+    #right-part1{padding: 0px;}
+    #right-part2{padding: 0px;}
 }
