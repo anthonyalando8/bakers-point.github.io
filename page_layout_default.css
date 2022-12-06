@@ -141,7 +141,7 @@ button:hover
 {
   .split-half, #page-content,.footer-right,.footer-left,.footer-middle
   {
-    width: 100%;float: left;padding-top: 5px;
+    width: 100%;float: left;padding-top: 10px;
   }
   .navbar a {
     float: none;
